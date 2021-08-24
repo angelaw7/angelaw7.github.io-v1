@@ -1,9 +1,10 @@
+import { IonTitle } from '@ionic/react'
 import React from 'react'
 
 const Skills = () => {
     return (
         <div>
-            Skills
+            <IonTitle>Skills</IonTitle>
         </div>
     )
 }

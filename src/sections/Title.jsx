@@ -4,7 +4,7 @@ const Title = () => {
   return (
     <div>
       <IonTitle>
-        Hi
+        Hi!<br/>I'm Angela
       </IonTitle>
     </div>
   )
