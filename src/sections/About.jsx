@@ -3,7 +3,7 @@ import PageContainer from '../components/PageContainer'
 
 const About = () => {
 	return (
-		<div>
+		<div id="about">
 			<PageContainer>
 				<h1>About Me</h1>
 				<p>

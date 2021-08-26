@@ -3,7 +3,7 @@ import PageContainer from '../components/PageContainer'
 
 const Contact = () => {
 	return (
-		<div style={{ backgroundColor: "#165BAA", color: "white" }}>
+		<div id="contact" style={{ backgroundColor: "#165BAA", color: "white" }}>
 			<PageContainer>
 				<h1>Contact</h1>
 				<p>

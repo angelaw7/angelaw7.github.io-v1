@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import background from "../imgs/bgimg.png"
 import { chevronDown } from 'ionicons/icons'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const BgImg = styled.div`
 background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(${background});
@@ -52,6 +53,10 @@ const DownBtn = styled.div`
   margin-top: 20vh;
 `
 
+const Link = styled(AnchorLink)`
+  text-decoration: none;
+`
+
 const Title = () => {
   return (
     <BgImg>
@@ -61,12 +66,13 @@ const Title = () => {
         </NameTitle>
         <SubHeading>Software & Biomedical Engineering Student</SubHeading>
         <LinkContainer>
-          <SubHeading>/about</SubHeading>
-          <SubHeading>/projects</SubHeading>
-          <SubHeading>/contact</SubHeading>
+          <Link href="#about"><SubHeading>/about</SubHeading></Link>
+          <Link href="#skills"><SubHeading>/skills</SubHeading></Link>
+          <Link href="#projects"><SubHeading>/projects</SubHeading></Link>
+          <Link href="#contact"><SubHeading>/contact</SubHeading></Link>
         </LinkContainer>
       </TextContainer>
-      <DownBtn onClick={() => console.log('down')}><IonIcon style={{marginTop: 5, marginLeft: 5}} size="large" icon={chevronDown} /></DownBtn>
+      <Link href="#about"><DownBtn onClick={() => console.log('down')}><IonIcon style={{ marginTop: 6, marginLeft: 4.5 }} size="large" icon={chevronDown} /></DownBtn></Link>
     </BgImg>
   )
 }

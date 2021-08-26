@@ -3,7 +3,7 @@ import PageContainer from '../components/PageContainer'
 
 const Projects = () => {
     return (
-        <div>
+        <div id="projects">
             <PageContainer>
                 <h1>Projects</h1>
             </PageContainer>
