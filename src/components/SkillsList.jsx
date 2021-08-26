@@ -14,7 +14,7 @@ const skills = [
     { name: "WordPress", logo: logoWordpress },
 ]
 
-const Skill = () => {
+const SkillsList = () => {
     return (
         <IonRow>
             {skills.map((skill) => (
@@ -29,4 +29,4 @@ const Skill = () => {
     )
 }
 
-export default Skill
+export default SkillsList;
