@@ -18,14 +18,13 @@ const Skill = () => {
     return (
         <IonRow>
             {skills.map((skill) => (
-                <IonCol>
-                    <div>
+                <IonCol >
+                    <div style={{ alignItems: "center", flexDirection: "column", display: "flex" }}>
                         <IonIcon icon={skill.logo} size="large" />
                         <IonText>{skill.name}</IonText>
                     </div>
                 </IonCol>
             ))}
-            {/* <IonIcon icon={logoHtml5} size="large" /> */}
         </IonRow>
     )
 }

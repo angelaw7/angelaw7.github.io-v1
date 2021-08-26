@@ -1,9 +1,12 @@
 import React from 'react'
+import PageContainer from '../components/PageContainer'
 
 const Projects = () => {
     return (
         <div>
-            <h1>Projects</h1>
+            <PageContainer>
+                <h1>Projects</h1>
+            </PageContainer>
         </div>
     )
 }
