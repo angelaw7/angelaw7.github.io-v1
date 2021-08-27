@@ -83,6 +83,9 @@ const ContactBtn = styled.button`
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+    &:hover {
+        background-color: #3c9c3f;
+    }
 `
 
 export default ContactForm;

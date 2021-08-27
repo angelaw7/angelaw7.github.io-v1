@@ -15,13 +15,13 @@ const Title = () => {
           </NameTitle>
           <SubHeading>Software & Biomedical Engineering Student</SubHeading>
           <LinkContainer>
-            <Link href="#about"><SubHeading>/about</SubHeading></Link>
-            <Link href="#skills"><SubHeading>/skills</SubHeading></Link>
-            <Link href="#projects"><SubHeading>/projects</SubHeading></Link>
-            <Link href="#contact"><SubHeading>/contact</SubHeading></Link>
+            <Link href="#about"><LinkText>/about</LinkText></Link>
+            <Link href="#skills"><LinkText>/skills</LinkText></Link>
+            <Link href="#projects"><LinkText>/projects</LinkText></Link>
+            <Link href="#contact"><LinkText>/contact</LinkText></Link>
           </LinkContainer>
         </TextContainer>
-        <DownBtn onClick={() => console.log('down')}>
+        <DownBtn>
           <Link href="#about">
             <IonIcon style={{ marginTop: 6, marginLeft: 4.5 }} size="large" icon={chevronDown} />
           </Link>
@@ -61,6 +61,12 @@ const SubHeading = styled.p`
   font-size: 18px;
 `
 
+const LinkText = styled(SubHeading)`
+&:hover {
+    color: #b7b1f1;
+  }
+`
+
 const LinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -77,6 +83,9 @@ const DownBtn = styled.div`
   margin: auto;
   justify-content: bottom;
   margin-top: 20vh;
+  &:hover {
+    background-color: #b7b1f1;
+  }
 `
 
 const Link = styled(AnchorLink)`

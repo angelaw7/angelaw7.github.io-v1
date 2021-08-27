@@ -1,6 +1,7 @@
 import React from 'react'
 import { IonCol, IonIcon, IonRow } from '@ionic/react'
 import { logoLinkedin, mail, logoGithub } from 'ionicons/icons';
+import styled from 'styled-components';
 
 const contactLinks = [
     { site: "https://www.linkedin.com/in/angelawwang/", logo: logoLinkedin },
@@ -15,7 +16,7 @@ const ContactLinks = () => {
                 <IonCol key={link.site} >
                     <div style={{ alignItems: "center", flexDirection: "column", display: "flex" }}>
                         <a href={link.site} target="_blank" rel="noreferrer" >
-                            <IonIcon site={link.site} style={{ textDecoration: "none", color: "white", pointerEvents: 'none' }} icon={link.logo} size="large" />
+                            <Icon site={link.site} icon={link.logo} size="large" />
                         </a>
                     </div>
                 </IonCol>
@@ -24,5 +25,10 @@ const ContactLinks = () => {
     )
 }
 
+const Icon = styled(IonIcon)`
+    text-decoration: none;
+    color: white;
+    pointer-events: none;
+`
 
 export default ContactLinks

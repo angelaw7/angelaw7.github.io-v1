@@ -7,9 +7,9 @@ import { chevronUp } from 'ionicons/icons'
 const Footer = () => {
     return (
         <div>
-            <UpBtn onClick={() => console.log('up')}>
+            <UpBtn>
                 <Link href="#title">
-                    <IonIcon style={{ marginTop: 6, marginLeft: 4.5 }} size="large" icon={chevronUp} />
+                    <Icon size="large" icon={chevronUp} />
                 </Link>
             </UpBtn>
         </div >
@@ -18,6 +18,11 @@ const Footer = () => {
 
 const Link = styled(AnchorLink)`
   text-decoration: none;
+`
+
+const Icon = styled(IonIcon)`
+    margin-top: 3.5px;
+    margin-left: 4.5px;
 `
 
 const UpBtn = styled.div`
@@ -30,6 +35,9 @@ const UpBtn = styled.div`
   margin: auto;
   margin-top: 6vh;
   margin-bottom: 6vh;
+ &:hover {
+    background-color: #b7b1f1;
+  }
 `
 
 export default Footer
