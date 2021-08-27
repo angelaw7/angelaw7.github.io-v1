@@ -12,9 +12,9 @@ const ContactLinks = () => {
     return (
         <IonRow style={{ width: "40%" }}>
             {contactLinks.map((link) => (
-                <IonCol >
+                <IonCol key={link.site} >
                     <div style={{ alignItems: "center", flexDirection: "column", display: "flex" }}>
-                        <a href={link.site} target="_blank" >
+                        <a href={link.site} target="_blank" rel="noreferrer" >
                             <IonIcon site={link.site} style={{ textDecoration: "none", color: "white", pointerEvents: 'none' }} icon={link.logo} size="large" />
                         </a>
                     </div>
