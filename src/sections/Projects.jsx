@@ -2,7 +2,6 @@ import React from 'react'
 import PageContainer from '../components/PageContainer'
 import { IonRow } from '@ionic/react'
 import ProjectCard from '../components/ProjectCard'
-import placeholderimg from '../imgs/bgimg.png';
 import devupImg from '../imgs/DevUp.png';
 
 const projects = [
@@ -12,7 +11,6 @@ const projects = [
         repo: "https://github.com/LaloVene/MLH-PE-Project",
         website: "https://dev-up.tech"
     },
-    // { id: 2, title: "Sample", img: placeholderimg, desc: "Sample description sample description sample description sample description ", link: "https://google.ca" },
 
 ]
 
