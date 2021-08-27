@@ -4,7 +4,7 @@ import SkillsList from '../components/SkillsList'
 
 const Skills = () => {
     return (
-        <div id="skills" style={{ backgroundColor: "#F9D1D1" }}>
+        <div id="skills">
             <PageContainer>
                 <h1>Skills</h1>
                 <SkillsList />
