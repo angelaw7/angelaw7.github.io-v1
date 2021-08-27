@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const ProjectCard = ({ title, img, desc, website, repo }) => {
 
     return (
-        <IonCol style={{ maxWidth: "25vw", minWidth: "20vw", cursor: "pointer" }}>
+        <IonCol style={{ maxWidth: "350px", cursor: "pointer" }}>
             <Card >
                 <IonCardHeader>
                     <IonCardTitle >{title}</IonCardTitle>
