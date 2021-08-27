@@ -20,7 +20,7 @@ const SkillsList = () => {
             {skills.map((skill) => (
                 <IonCol >
                     <div style={{ alignItems: "center", flexDirection: "column", display: "flex" }}>
-                        <IonIcon icon={skill.logo} size="large" />
+                        <IonIcon icon={skill.logo} style={{ pointerEvents: 'none' }} size="large" />
                         <IonText>{skill.name}</IonText>
                     </div>
                 </IonCol>

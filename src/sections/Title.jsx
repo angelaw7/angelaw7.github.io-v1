@@ -5,6 +5,32 @@ import styled from 'styled-components'
 import background from "../imgs/bgimg.png"
 import { chevronDown } from 'ionicons/icons'
 
+const Title = () => {
+  return (
+    <div id="title">
+      <BgImg>
+        <TextContainer>
+          <NameTitle>
+            Hi!<br />I'm <Blue>Angela</Blue>
+          </NameTitle>
+          <SubHeading>Software & Biomedical Engineering Student</SubHeading>
+          <LinkContainer>
+            <Link href="#about"><SubHeading>/about</SubHeading></Link>
+            <Link href="#skills"><SubHeading>/skills</SubHeading></Link>
+            <Link href="#projects"><SubHeading>/projects</SubHeading></Link>
+            <Link href="#contact"><SubHeading>/contact</SubHeading></Link>
+          </LinkContainer>
+        </TextContainer>
+        <DownBtn onClick={() => console.log('down')}>
+          <Link href="#about">
+            <IonIcon style={{ marginTop: 6, marginLeft: 4.5 }} size="large" icon={chevronDown} />
+          </Link>
+        </DownBtn>
+      </BgImg>
+    </div>
+  )
+}
+
 const BgImg = styled.div`
   background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(${background});
   background-size: cover;
@@ -56,31 +82,5 @@ const DownBtn = styled.div`
 const Link = styled(AnchorLink)`
   text-decoration: none;
 `
-
-const Title = () => {
-  return (
-    <div id="title">
-      <BgImg>
-        <TextContainer>
-          <NameTitle>
-            Hi!<br />I'm <Blue>Angela</Blue>
-          </NameTitle>
-          <SubHeading>Software & Biomedical Engineering Student</SubHeading>
-          <LinkContainer>
-            <Link href="#about"><SubHeading>/about</SubHeading></Link>
-            <Link href="#skills"><SubHeading>/skills</SubHeading></Link>
-            <Link href="#projects"><SubHeading>/projects</SubHeading></Link>
-            <Link href="#contact"><SubHeading>/contact</SubHeading></Link>
-          </LinkContainer>
-        </TextContainer>
-        <DownBtn onClick={() => console.log('down')}>
-          <Link href="#about">
-            <IonIcon style={{ marginTop: 6, marginLeft: 4.5 }} size="large" icon={chevronDown} />
-          </Link>
-        </DownBtn>
-      </BgImg>
-    </div>
-  )
-}
 
 export default Title
