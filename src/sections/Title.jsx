@@ -16,8 +16,9 @@ const Title = () => {
           <SubHeading>Software & Biomedical Engineering Student</SubHeading>
           <LinkContainer>
             <Link href="#about"><LinkText>/about</LinkText></Link>
-            <Link href="#skills"><LinkText>/skills</LinkText></Link>
+            <Link href="#experience"><LinkText>/experience</LinkText></Link>
             <Link href="#projects"><LinkText>/projects</LinkText></Link>
+            <Link href="#skills"><LinkText>/skills</LinkText></Link>
             <Link href="#contact"><LinkText>/contact</LinkText></Link>
           </LinkContainer>
         </TextContainer>
@@ -50,6 +51,7 @@ const NameTitle = styled.h1`
   padding-top: 30vh;
   font-family: 'Viga', sans-serif;
   font-size: 60px;
+  font-weight: bold;
 `
 
 const Blue = styled.span`
@@ -70,7 +72,7 @@ const LinkText = styled(SubHeading)`
 const LinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 400px;
 `
 
 const DownBtn = styled.div`
