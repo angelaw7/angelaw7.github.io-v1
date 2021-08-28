@@ -1,3 +1,3 @@
-# Angela's Portfolio
+# Angela's Personal Website
 
-Built with React, Ionic, and Styled Components
+Built with React. Visit the website [here](https://angelaw7.github.io)!
