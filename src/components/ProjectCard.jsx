@@ -7,9 +7,9 @@ const ProjectCard = ({ title, img, desc, website, repo }) => {
     return (
         <IonCol style={{ maxWidth: "350px", cursor: "pointer" }}>
             <Card >
-                <IonCardHeader>
-                    <IonCardTitle >{title}</IonCardTitle>
-                </IonCardHeader>
+                <Header >
+                    <Title >{title}</Title>
+                </Header>
                 <Image style={{ padding: '0px 15px' }} src={img} />
                 <IonCardContent>
                     <IonText>
@@ -45,6 +45,16 @@ const Card = styled(IonCard)`
     &:hover {
         background-color: #fff4f4;
     }    
+`
+
+const Header = styled(IonCardHeader)`
+    background-color: #ad387c;
+`
+
+const Title = styled(IonCardTitle)`
+    color: white;
+    padding: 6px;
+    font-size: 22px;
 `
 
 export default ProjectCard
