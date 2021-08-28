@@ -12,6 +12,7 @@ const Footer = () => {
                     <Icon size="large" icon={chevronUp} />
                 </Link>
             </UpBtn>
+            <Copyright>&copy; Angela Wang 2021</Copyright>
         </div >
     )
 }
@@ -34,10 +35,15 @@ const UpBtn = styled.div`
   border-width: 25px;
   margin: auto;
   margin-top: 6vh;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
  &:hover {
     background-color: #b7b1f1;
   }
+`
+
+const Copyright = styled.p`
+    text-align: center;
+    margin-bottom: 4vh;
 `
 
 export default Footer
