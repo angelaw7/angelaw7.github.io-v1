@@ -42,19 +42,17 @@ const Image = styled(IonImg)`
 
 const Card = styled(IonCard)`
     cursor: default;
-    &:hover {
-        background-color: #fff4f4;
-    }    
 `
 
 const Header = styled(IonCardHeader)`
-    background-color: #ad387c;
+    background-color: #ce5076;
 `
 
 const Title = styled(IonCardTitle)`
     color: white;
     padding: 6px;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
 `
 
 export default ProjectCard
