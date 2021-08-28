@@ -5,14 +5,16 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Experience from "./sections/Experience";
 
 const App = () => {
   return (
     <>
       <Title />
       <About />
-      <Projects />
+      <Experience />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </>
