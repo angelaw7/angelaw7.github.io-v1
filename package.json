@@ -45,5 +45,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "resolutions": {
+    "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
   }
 }
