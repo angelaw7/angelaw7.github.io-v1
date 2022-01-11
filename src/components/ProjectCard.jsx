@@ -16,7 +16,7 @@ const ProjectCard = ({ title, img, desc, website, repo }) => {
                         {desc}
                     </IonText>
                     <Links >
-                        {website ? <Link href={website} target="_blank" rel="noreferrer">Visit the Website</Link> : ""}
+                        {/* {website ? <Link href={website} target="_blank" rel="noreferrer">Visit the Website</Link> : ""} */}
                         {repo ? <Link href={repo} target="_blank" rel="noreferrer">GitHub Repo</Link> : ""}
                     </Links>
                 </IonCardContent>
@@ -38,6 +38,9 @@ const Links = styled(IonCardSubtitle)`
 
 const Image = styled(IonImg)`
     padding: 0px 15px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 `
 
 const Card = styled(IonCard)`
