@@ -1,61 +1,49 @@
 import React from 'react'
-import { IonImg, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCol, IonText, IonCardSubtitle } from '@ionic/react';
-import styled from 'styled-components';
+import { Box, Card, CardContent, Typography, CardMedia, Link, Grid } from "@mui/material"
+import { logoGithub } from 'ionicons/icons';
+import { IonIcon } from '@ionic/react';
 
 const ProjectCard = ({ title, img, desc, website, repo }) => {
 
     return (
-        <IonCol style={{ maxWidth: "350px", cursor: "pointer" }}>
-            <Card >
-                <Header >
-                    <Title >{title}</Title>
-                </Header>
-                <Image style={{ padding: '0px 15px' }} src={img} />
-                <IonCardContent>
-                    <IonText>
+        <Grid item xs={4}>
+            <Card sx={{ margin: "10px" }}>
+                <Box sx={{ backgroundColor: '#ce5076', height: 'auto' }}>
+                    <Typography variant="h4" sx={{ fontSize: '120%', fontWeight: 'bold', padding: '20px', textAlign: 'center', color: 'white', margin: 'auto' }}>
+                        {title}
+                    </Typography>
+                </Box>
+                <CardContent sx={{ padding: "30px", alignContent: "center" }}>
+                    <CardMedia
+                        component="img"
+                        sx={{ maxWidth: 200, maxHeight: 100, width: 'auto', height: 'auto', margin: 'auto' }}
+                        image={img}
+                    />
+
+                    <Typography variant="body2">
                         {desc}
-                    </IonText>
-                    <Links >
-                        {/* {website ? <Link href={website} target="_blank" rel="noreferrer">Visit the Website</Link> : ""} */}
-                        {repo ? <Link href={repo} target="_blank" rel="noreferrer">GitHub Repo</Link> : ""}
-                    </Links>
-                </IonCardContent>
-            </Card>
-        </IonCol>
+                    </Typography>
+                    <Box sx={{ display: 'flex', width: '70%', margin: 'auto', marginTop: '20px', }}>
+                        <IonIcon icon={logoGithub} size="large" />
+                        <Typography variant="body2" sx={{ margin: 'auto' }}>
+                            <Link href={repo} underline="none" target="_blank" rel="noreferrer">
+                                GitHub Repo
+                            </Link>
+                        </Typography>
+                    </Box>
+                    {/* {website ? (
+                    <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+                        <Typography variant="body2" sx={{ margin: 'auto' }}>
+                            <Link href={website} underline="none" target="_blank" rel="noreferrer">
+                                Visit the page!
+                            </Link>
+                        </Typography>
+                    </Box>
+                ) : ''} */}
+                </CardContent>
+            </Card >
+        </Grid>
     )
 }
-
-const Link = styled.a`
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-`
-
-const Links = styled(IonCardSubtitle)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px 0;
-`
-
-const Image = styled(IonImg)`
-    padding: 0px 15px;
-    height: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-`
-
-const Card = styled(IonCard)`
-    cursor: default;
-`
-
-const Header = styled(IonCardHeader)`
-    background-color: #ce5076;
-`
-
-const Title = styled(IonCardTitle)`
-    color: white;
-    padding: 6px;
-    font-size: 20px;
-    font-weight: bold;
-`
 
 export default ProjectCard

@@ -4,6 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import styled from 'styled-components'
 import background from "../imgs/bgimg.png"
 import { chevronDown } from 'ionicons/icons'
+import { Grid } from '@mui/material';
 
 const Title = () => {
   return (
@@ -14,13 +15,23 @@ const Title = () => {
             Hi!<br />I'm <Blue>Angela</Blue>
           </NameTitle>
           <SubHeading>Software & Biomedical Engineering Student</SubHeading>
-          <LinkContainer>
-            <Link href="#about"><LinkText>/about</LinkText></Link>
-            <Link href="#experience"><LinkText>/experience</LinkText></Link>
-            <Link href="#projects"><LinkText>/projects</LinkText></Link>
-            <Link href="#skills"><LinkText>/skills</LinkText></Link>
-            <Link href="#contact"><LinkText>/contact</LinkText></Link>
-          </LinkContainer>
+          <Grid container spacing={2}>
+            <Grid item>
+              <Link href="#about"><LinkText>/about</LinkText></Link>
+            </Grid>
+            <Grid item>
+              <Link href="#experience"><LinkText>/experience</LinkText></Link>
+            </Grid>
+            <Grid item>
+              <Link href="#projects"><LinkText>/projects</LinkText></Link>
+            </Grid>
+            <Grid item>
+              <Link href="#skills"><LinkText>/skills</LinkText></Link>
+            </Grid>
+            <Grid item>
+              <Link href="#contact"><LinkText>/contact</LinkText></Link>
+            </Grid>
+          </Grid>
         </TextContainer>
         <DownBtn>
           <Link href="#about">
@@ -61,9 +72,11 @@ const Blue = styled.span`
 const SubHeading = styled.p`
   color: white;
   font-size: 18px;
+  font-style: italic;
 `
 
 const LinkText = styled(SubHeading)`
+font-style: normal;
 &:hover {
     color: #b7b1f1;
   }

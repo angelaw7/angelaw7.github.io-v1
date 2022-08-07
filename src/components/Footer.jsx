@@ -12,7 +12,7 @@ const Footer = () => {
                     <Icon size="large" icon={chevronUp} />
                 </Link>
             </UpBtn>
-            <Copyright>&copy; Angela Wang 2021</Copyright>
+            <Copyright>&copy; Angela Wang 2021-2022</Copyright>
         </div >
     )
 }

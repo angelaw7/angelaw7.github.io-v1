@@ -1,10 +1,10 @@
 import React from "react";
 import PageContainer from "../components/PageContainer";
-import { IonRow } from "@ionic/react";
 import ProjectCard from "../components/ProjectCard";
 import devupImg from "../imgs/devup-logo.png";
 import discordImg from "../imgs/discord-logo.png";
 import ytImg from "../imgs/yt-logo.jpg";
+import { Grid } from "@mui/material";
 
 const projects = [
   {
@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     title: "Download from YouTube",
     img: ytImg,
-    desc: "A Python script with a Tkinter GUI to download files from YouTube using PyTube. The GUI allows the user to choose between downloading video or audio files, and a single video or an entire playlsit.",
+    desc: "A Python script with a Tkinter GUI to download files from YouTube using PyTube. The GUI allows the user to choose between downloading video or audio files, and a single video or an entire playlist.",
     repo: "https://github.com/angelaw7/Download-from-YouTube",
     website: "",
   },
@@ -38,7 +38,7 @@ const Projects = () => {
     <div id="projects" style={{ backgroundColor: "#F9D1D1" }}>
       <PageContainer>
         <h1>Projects</h1>
-        <IonRow>
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {projects.map((project) => {
             return (
               <ProjectCard
@@ -51,7 +51,7 @@ const Projects = () => {
               />
             );
           })}
-        </IonRow>
+        </Grid>
       </PageContainer>
     </div>
   );

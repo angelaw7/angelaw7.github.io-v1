@@ -1,50 +1,35 @@
 import React from 'react'
-import { IonImg, IonCard, IonCardTitle, IonCardContent, IonRow, IonText, IonCol, IonCardSubtitle } from '@ionic/react';
-import styled from 'styled-components';
+import { Box, Card, CardContent, Typography, CardMedia, Grid } from "@mui/material"
 
 const ExperienceCard = ({ company, date, position, img, desc }) => {
 
     return (
-        <IonRow style={{ cursor: "pointer" }}>
-            <Card >
-                <IonCol size={2}>
-                    <Image src={img} />
-                </IonCol>
-                <IonCol>
-                    <Title>
-                        <span style={{ fontWeight: 'bold' }}>{position}</span> - {company}
-                    </Title>
-                    <IonCardSubtitle style={{paddingLeft: "16px", marginTop: "4px"}}>
-                    {date}
-                    </IonCardSubtitle>
-                <IonCardContent>
-                    <IonText>
-                        {desc}
-                    </IonText>
-                </IonCardContent>
-                </IonCol>
-            </Card>
-        </IonRow >
+        <Card sx={{ display: 'flex', margin: '10px' }}>
+            <CardContent style={{ padding: "30px" }}>
+                <Grid container columns={{ xs: 4, sm: 8, md: 12 }} alignItems="center">
+                    <Grid item xs={4} sm={2} md={2}>
+                        <CardMedia
+                            component="img"
+                            sx={{ maxWidth: 110, maxHeight: 110, width: 'auto', height: 'auto' }}
+                            image={img}
+                        />
+                    </Grid>
+                    <Grid item xs={4} sm={6} md={10}>
+                        <Typography variant="body1" sx={{ fontSize: '120%' }}>
+                            <Box fontWeight={"bold"} display={"inline"}>{position}</Box> - {company}
+                        </Typography>
+                        <Typography variant="subtitle2" gutterBottom>
+                            {date}
+                        </Typography>
+                        <Typography variant="body2">
+                            {desc}
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </CardContent>
+
+        </Card >
     )
 }
-
-const Image = styled(IonImg)`
-    height: 140px;
-    margin-left: 10px;
-`
-
-const Card = styled(IonCard)`
-    display: flex;
-    cursor: default;
-    &:hover {
-        background-color: #f2f6ff;
-    }    
-`
-
-const Title = styled(IonCardTitle)`
-    padding-top: 16px;
-    padding-left: 16px;
-    font-size: 20px;
-`
 
 export default ExperienceCard

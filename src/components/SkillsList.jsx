@@ -1,7 +1,7 @@
 import React from 'react'
 import { IonCol, IonIcon, IonRow, IonText } from '@ionic/react'
-import { logoHtml5, logoCss3, logoReact, logoDocker, logoPython, logoJavascript, logoGithub, logoTux, logoWordpress } from 'ionicons/icons';
-import { SiFlask, SiVisualstudiocode, SiGit, SiFigma, SiAmazonaws, SiRaspberrypi } from 'react-icons/si'
+import { logoHtml5, logoCss3, logoReact, logoDocker, logoPython, logoJavascript, logoGithub, logoTux } from 'ionicons/icons';
+import { SiFlask, SiVisualstudiocode, SiGit, SiFigma, SiRaspberrypi, SiC, SiGo } from 'react-icons/si'
 import { HiDatabase } from 'react-icons/hi'
 
 const skills = [
@@ -13,7 +13,6 @@ const skills = [
     { name: "Docker", logo: logoDocker },
     { name: "Linux", logo: logoTux },
     { name: "GitHub", logo: logoGithub },
-    { name: "WordPress", logo: logoWordpress },
 ]
 
 const SkillsList = () => {
@@ -39,6 +38,14 @@ const SkillsList = () => {
                 </Col>
             ))}
             <Col >
+                <SiC size="30" />
+                C
+            </Col>
+            <Col >
+                <SiGo size="30" />
+                Golang
+            </Col>
+            <Col >
                 <HiDatabase size="30" />
                 SQL
             </Col>
@@ -53,10 +60,6 @@ const SkillsList = () => {
             <Col >
                 <SiGit size="30" />
                 Git
-            </Col>
-            <Col >
-                <SiAmazonaws size="30" />
-                AWS
             </Col>
             <Col >
                 <SiRaspberrypi size="30" />

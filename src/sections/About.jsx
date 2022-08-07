@@ -22,17 +22,8 @@ const About = () => {
               develop innovate biomedical devices and software.
               <br />
               <br />
-              Over the summer, I was a Fellow in the Production Engineering
-              Fellowship, organized by Major League Hacking (MLH) and powered by
-              Meta. I learned about DevOps skills by creating a web application
-              hosted on an AWS EC2 instance, containerizing it with Docker, and
-              implementing CI/CD, testing, and monitoring. I hope to use these
-              skills when working on future projects to automate processes and
-              ensure proper functionality and quality.
-              <br />
-              <br />
               When I’m not in front of a computer screen, I like to go swimming,
-              rock climbing, or out for a walk. I also enjoy building random
+              rock climbing, or hiking. I also enjoy building random
               things using software or hardware, digitally drawing, and learning
               fun facts about human anatomy. In the future, I wish to travel
               more to experience different cultures and lifestyles, to admire
@@ -44,7 +35,7 @@ const About = () => {
           <IonCol size-lg={4}>
             <iframe
               title="codeBlock"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=application%2Fjson&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=151%25&si=false&es=2x&wm=false&code=%257B%250A%2520%2522name%2522%253A%2520%2522Angela%2520Wang%2522%252C%250A%2520%2522location%2522%253A%2520%2522Hamilton%252C%2520Ontario%2522%252C%250A%2520%2522interests%2522%253A%2520%255B%2522Machine%2520Learning%2522%252C%250A%2509%2522Computer%2520Vision%2522%252C%2520%2522DevOps%2522%252C%250A%2509%2522Web%252FApp%2520Development%2522%255D%250A%2520%257D"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=application%2Fjson&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=151%25&si=false&es=2x&wm=false&code=%257B%250A%2520%2522name%2522%253A%2520%2522Angela%2520Wang%2522%252C%250A%2520%2522location%2522%253A%2520%2522Toronto%252C%2520Ontario%2522%252C%250A%2520%2522interests%2522%253A%2520%255B%2522Machine%2520Learning%2522%252C%250A%2509%2522Biotechnology%2522%252C%2520%2522DevOps%2522%252C%250A%2509%2522Software%2520Development%2522%255D%250A%2520%257D"
               style={{
                 width: "385px",
                 height: "201px",
